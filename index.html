@@ -1,0 +1,24 @@
+<html style="width: 100%;height: 100%;"><head>
+<title>markersisturningintoacrayon</title>
+<meta charset="UTF-8">
+</head>
+<body style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;margin: 0;background-color:black;"><span id="text" style="font-size: 7vw;font-family: sans-serif;">markersisturningintoacrayon</span>
+</body>
+<script>
+var color = 0;
+var text = document.getElementById("text");
+
+function changeColor() {
+	text.style.color = "hsla(" + color + ", 100%, 50%, 1)"
+
+	if(color == 360) {
+		color = 0;
+  } else {
+		color++;
+	}
+}
+
+
+setInterval(changeColor, 25);
+</script>
+</html>
